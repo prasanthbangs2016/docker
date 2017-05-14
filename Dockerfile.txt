@@ -2,4 +2,5 @@ FROM ubuntu:trusty
 MAINTAINER prashanth@wfs.com
 RUN apt-get update
 ADD hi.txt /hi.txt
+ADD https://pm.puppetlabs.com/puppet-agent/2017.2.1/1.10.1/repos/deb/trusty/PC1/puppet-agent_1.10.1-1trusty_amd64.deb /puppet-agent_1.10.1-1trusty_amd64.deb
 CMD ["/bin/bash"]
